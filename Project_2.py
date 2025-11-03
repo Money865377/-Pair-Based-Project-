@@ -24,8 +24,8 @@ adc = ADC(26)
 #give the user some instrucitons and an explanation of what the program does
 print("""
 This program will measure an compare the expected and actual PWM signals of 2 Picos.
-To indicate things are going well, the --- light will turn on.
-To indicate an error, the --- light will turn on.      
+To indicate things are going well, LED 1 will turn on.
+To indicate an error, LED 2 will turn on.      
 
 If you would like to procede, press the sw5 button.
       """)
@@ -90,4 +90,5 @@ while True:
             time.sleep(0.2)
         else:
             #notify user if there is no reply to read
+
             print("Error: there has been an issue reading the ADC signal")
