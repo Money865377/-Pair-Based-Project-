@@ -61,7 +61,6 @@ while True:
             time.sleep(0.5)   
 
         pwm.deinit()
-        print("\nTest complete. Verify that ADC readings increase as duty cycle increases.")
 
         #if there is a response, read it, if not, notify user
         if uart.any(): 
@@ -92,3 +91,4 @@ while True:
             #notify user if there is no reply to read
 
             print("Error: there has been an issue reading the ADC signal")
+
